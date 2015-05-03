@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+ <style type="text/css">
+    body
+    {
+
+      background-color: lavender;
+    }
+
+    </style>
+
+  </head>
+<body>
+
+  <div class="container-fluid" >
+        <legend > 
+
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label for="focusedInput">שם אזור:</label>
+                <input class="form-control" id="focusedInput" type="text" value="name of the region...">
+                 <br>
+
+              </div>
+            </form>
+            <br>
+
+
+
+
+          <form role="form-inline">
+            <div class="form-group">
+              <select class="col-sm-9">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+                        <label class="col-sm-3">מפה:</label>
+              <br>
+
+            </div>
+          </form>
+         </legend>
+
+<form>
+    
+    <fieldset >
+
+        <legend > קואורדינטות</legend>
+        <div>
+          ימנית עליונה <input type="text" class="col-sm-6" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46 ' ></div>
+          <br>
+         
+            
+            <div>
+
+             שמאלית תחתונה <input type="text" class="col-sm-6" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46 ' ></div>
+    
+    </fieldset>
+     </form>
+
+        <button type="button" class="btn btn-primary btn-block" style="background-color:green; position:absolute;
+        bottom:120px; ">שמור</button>
+
+        <br>
+
+              <form role="form-inline">
+                  <div class="form-group">
+                  <h4>
+                    <select class="col-sm-9">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                              <label class="col-sm-3"> Datum: </label>
+                    <br>
+              </h4>
+               <div class="form-group">
+               <br>
+                  <h4>
+                    <select class="col-sm-9">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                     
+                    </select>
+                              <label class="col-sm-3"> פורמט: </label>
+                    <br>
+              </h4>
+              <div class="form-group">
+               <br>
+                  <h4>
+                    <select class="col-sm-9">
+                      <option>1</option>
+                      <option>2</option>
+                     
+                    </select>
+                              <label class="col-sm-3"> רמת זום: </label>
+                    <br>
+              </h4>
+
+                  </div>
+                </form>
+
+
+
+</div>
+
+
+
+  </body>
+</html>

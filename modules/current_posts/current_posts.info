@@ -1,0 +1,9 @@
+name = Current Posts
+description = A description of what your module does.
+core = 7.x
+dependencies[] = views
+files[] = current_posts.module
+files[] = current_posts.test
+package = Elad
+version = "7.x-1.0"
+configure = admin/config/content/current_posts

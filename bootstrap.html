@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function (){
+      $("#add_mission").click(function(){
+        $("#head").text("משימה חדשה"); 
+        $("#new_mission").load("www.html");
+      });
+
+       $("#main").click(function(){
+       $("#new_mission").load("main.html");
+        $("#head").text("משימות מתבצעות"); 
+      });
+
+        $(document).ready(function (){  
+       $("#new_mission").load("main.html");
+        $("#head").text("משימות מתבצעות"); 
+      });
+    });
+    </script>
+
+   
+
+    <style type="text/css">
+    body{
+      background-color: lavender;
+    }
+    </style>
+
+  </head>
+  <body>
+
+
+    <div class="container-fluid" >
+      <div class="row"> 
+
+
+
+        <div class="col-sm-9" style="background-color : lavender; height : 100px ;">
+          <h1><center> Hello World </center></h1>
+        </div>
+  
+
+        <div class="col-sm-3" style="background-color : lavender; height : 100px ;" dir="rtl">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="add_mission">הוסף משימה</button>
+            <button type="button" class="btn btn-primary" id="main">ראשי</button>
+                     <font size="4" color="red" style="position : absolute ; top:60px;" id="head"> משימות מתבצעות </font>
+          </div>
+        </div>     
+
+
+
+        <div class="col-sm-9" style="background-color : lavender ; height : 800px ; ">
+          <img src="earth.png" class="img-rounded" height="680" width="915" >
+        </div>
+
+
+
+        <div class="col-sm-3" style="background-color : lavender ; height : 800px ;" dir="rtl" id="new_mission">
+        </div>
+
+
+
+
+
+        </div>
+      </div>
+
+
+    
+    </div>
+  </body>
+</html>

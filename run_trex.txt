@@ -1,0 +1,3 @@
+//ב"ה
+t= new Runner('.interstitial-wrapper');
+t.play();
